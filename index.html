@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ParkMate – Park Smarter. Move Faster.</title>
+  <meta name="description" content="ParkMate is the intelligent urban parking app for finding, booking, and managing parking with QR-based access and smart insights." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════ NAV ══ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <div class="logo-mark">
+          <svg width="32" height="42" viewBox="0 0 28 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 0C6.27 0 0 6.27 0 14C0 23.1 14 36 14 36C14 36 28 23.1 28 14C28 6.27 21.73 0 14 0Z" fill="#6BAE96"/>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M6 4H14.5C18.64 4 22 7.36 22 11.5C22 15.64 18.64 19 14.5 19H11V24H6V4Z
+                 M11 8V15H14.5C16.43 15 18 13.43 18 11.5C18 9.57 16.43 8 14.5 8H11Z"
+              fill="#1A1A1A"/>
+          </svg>
+        </div>
+        <span class="logo-text">ParkMate</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#vision">Vision</a></li>
+      </ul>
+      <a href="https://pun33th45.itch.io/parkmate-beta" target="_blank" rel="noopener noreferrer" class="nav-cta">Download Beta</a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="#features">Features</a>
+      <a href="#why">Why Us</a>
+      <a href="#how">How It Works</a>
+      <a href="#vision">Vision</a>
+      <a href="#beta" class="mobile-cta">Download Beta</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════ HERO ══ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="particles" id="particles"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        Beta Version Now Live
+      </div>
+
+      <h1 class="hero-headline reveal">
+        Park Smarter.<br/>
+        <span class="gradient-text">Move Faster.</span>
+      </h1>
+
+      <p class="hero-sub reveal">
+        The intelligent way to find, book, and manage parking in busy cities.<br/>
+        QR access. Digital payments. Smart insights. All in one app.
+      </p>
+
+      <div class="hero-actions reveal">
+        <a href="https://pun33th45.itch.io/parkmate-beta" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v13m0 0l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/></svg>
+          Download Beta APK
+        </a>
+        <a href="#features" class="btn btn-ghost">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8l4 4-4 4"/></svg>
+          View Features
+        </a>
+      </div>
+
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-target="500">0</span><span>+</span>
+          <span class="stat-label">Beta Users</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="50">0</span><span>+</span>
+          <span class="stat-label">Parking Spots</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="3">0</span><span>x</span>
+          <span class="stat-label">Faster Parking</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <!-- Floating feature pills -->
+      <div class="hero-pill hero-pill-1"><span>🔳</span> QR Access</div>
+      <div class="hero-pill hero-pill-2"><span>⚡</span> Book in 10s</div>
+      <div class="hero-pill hero-pill-3"><span>🗺</span> Live Map</div>
+      <div class="phone-frame">
+        <div class="phone-screen">
+          <div class="app-header">
+            <div class="app-header-left">
+              <div class="app-avatar"></div>
+              <div>
+                <div class="app-greeting">Good morning!</div>
+                <div class="app-location">📍 Hyderabad, IN</div>
+              </div>
+            </div>
+            <div class="app-notif">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"/></svg>
+            </div>
+          </div>
+          <div class="app-map">
+            <div class="map-grid"></div>
+            <div class="map-pin pin-1">
+              <div class="pin-dot"></div>
+              <div class="pin-pulse"></div>
+              <div class="pin-label">₹40/hr</div>
+            </div>
+            <div class="map-pin pin-2 available">
+              <div class="pin-dot"></div>
+              <div class="pin-pulse"></div>
+              <div class="pin-label">₹25/hr</div>
+            </div>
+            <div class="map-pin pin-3">
+              <div class="pin-dot"></div>
+              <div class="pin-label">₹60/hr</div>
+            </div>
+            <div class="map-user">
+              <div class="user-dot"></div>
+              <div class="user-ring"></div>
+            </div>
+          </div>
+          <div class="app-card">
+            <div class="app-card-header">
+              <span class="available-badge">● Available</span>
+              <span class="card-dist">0.3 km away</span>
+            </div>
+            <div class="app-card-title">Cyber Gateway Parking</div>
+            <div class="app-card-sub">Level B2 · 12 spots open</div>
+            <div class="app-card-footer">
+              <span class="card-price">₹40 <small>/hr</small></span>
+              <button class="card-book-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="phone-notch"></div>
+      </div>
+      <div class="phone-glow"></div>
+    </div>
+
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ WHAT IS ══ -->
+  <section class="what-is section" id="about">
+    <div class="container">
+      <div class="what-grid">
+        <div class="what-text">
+          <div class="section-tag reveal">About ParkMate</div>
+          <h2 class="section-title reveal">
+            Parking, <span class="gradient-text">reimagined</span> for the modern city
+          </h2>
+          <p class="section-body reveal">
+            ParkMate is a smart urban parking platform designed to eliminate the chaos of finding parking in busy cities. We connect drivers with available parking spots in real-time, enabling seamless discovery, advance booking, and contactless access — all from a single app.
+          </p>
+          <div class="what-pills reveal">
+            <div class="pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Smart Parking Discovery</div>
+            <div class="pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Advance Booking</div>
+            <div class="pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Digital Payments</div>
+            <div class="pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>QR-Based Access</div>
+            <div class="pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Urban-Optimized</div>
+          </div>
+        </div>
+        <div class="what-visual reveal">
+          <div class="city-card">
+            <div class="city-card-top">
+              <div class="city-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              </div>
+              <span>Smart City Ready</span>
+            </div>
+            <div class="city-grid-visual">
+              <div class="city-block tall">
+                <div class="block-win"></div>
+                <div class="block-win"></div>
+                <div class="block-win"></div>
+              </div>
+              <div class="city-block">
+                <div class="block-win"></div>
+                <div class="block-win"></div>
+              </div>
+              <div class="city-block taller">
+                <div class="block-win"></div>
+                <div class="block-win"></div>
+                <div class="block-win"></div>
+                <div class="block-win"></div>
+              </div>
+              <div class="city-block">
+                <div class="block-win"></div>
+              </div>
+              <div class="city-road">
+                <div class="road-line"></div>
+              </div>
+              <div class="city-park-spot sp1">P</div>
+              <div class="city-park-spot sp2 active">P</div>
+              <div class="city-park-spot sp3">P</div>
+            </div>
+            <div class="city-card-stat">
+              <span class="c-stat-label">City Coverage</span>
+              <div class="c-stat-bar">
+                <div class="c-stat-fill"></div>
+              </div>
+              <span class="c-stat-val">Hyderabad</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ FEATURES ══ -->
+  <section class="features section" id="features">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag reveal">Core Features</div>
+        <h2 class="section-title reveal">Everything you need,<br/><span class="gradient-text">nothing you don't</span></h2>
+        <p class="section-sub reveal">Six powerful features that make ParkMate the last parking app you'll ever need.</p>
+      </div>
+
+      <div class="features-grid">
+
+        <div class="feat-card feat-large reveal">
+          <div class="feat-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          </div>
+          <h3>Find Parking Instantly</h3>
+          <p>Discover nearby parking spots in real-time using intelligent map listings and smart location data. No more circling blocks.</p>
+          <div class="feat-demo">
+            <div class="mini-map">
+              <div class="m-pin active">P</div>
+              <div class="m-pin">P</div>
+              <div class="m-pin busy">P</div>
+              <div class="m-user"></div>
+              <div class="m-radius"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feat-card reveal">
+          <div class="feat-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          </div>
+          <h3>Book & Pay Seamlessly</h3>
+          <p>Reserve parking in advance with secure digital payments. Pay once, park without stress.</p>
+        </div>
+
+        <div class="feat-card reveal">
+          <div class="feat-icon-wrap qr-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="5" y="5" width="3" height="3" fill="currentColor" stroke="none"/><rect x="16" y="5" width="3" height="3" fill="currentColor" stroke="none"/><rect x="5" y="16" width="3" height="3" fill="currentColor" stroke="none"/><path d="M14 14h3v3M17 14v3h3M14 21h3"/></svg>
+          </div>
+          <h3>QR-Based Access</h3>
+          <p>Receive a unique QR code after booking for instant contactless verification at the parking spot.</p>
+        </div>
+
+        <div class="feat-card reveal">
+          <div class="feat-icon-wrap green-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>List Your Space</h3>
+          <p>Turn your unused driveway or garage into a revenue stream. List your parking spot and earn effortlessly.</p>
+        </div>
+
+        <div class="feat-card feat-large reveal">
+          <div class="feat-icon-wrap purple-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
+          <h3>Smart Insights</h3>
+          <p>AI-powered analytics on parking availability, traffic patterns, and pricing trends — so you always park at the right time, at the right place, for the right price.</p>
+          <div class="feat-chart">
+            <div class="chart-bars">
+              <div class="bar" style="height:40%"><span>Mon</span></div>
+              <div class="bar" style="height:65%"><span>Tue</span></div>
+              <div class="bar" style="height:45%"><span>Wed</span></div>
+              <div class="bar active" style="height:80%"><span>Thu</span></div>
+              <div class="bar" style="height:55%"><span>Fri</span></div>
+              <div class="bar" style="height:90%"><span>Sat</span></div>
+              <div class="bar" style="height:30%"><span>Sun</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feat-card reveal">
+          <div class="feat-icon-wrap orange-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          </div>
+          <h3>Dark Mode & Clean UI</h3>
+          <p>A startup-grade interface with dark mode support, smooth animations, and an intuitive design language.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ WHY ══ -->
+  <section class="why section" id="why">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag reveal">Why ParkMate</div>
+        <h2 class="section-title reveal">Traditional parking is <span class="gradient-text">broken.</span><br/>We fixed it.</h2>
+      </div>
+
+      <div class="compare-grid">
+        <div class="compare-card old reveal">
+          <div class="compare-header">
+            <div class="compare-icon bad">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+            </div>
+            <h3>Traditional Parking</h3>
+          </div>
+          <ul class="compare-list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff6b6b" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              Drive around looking for spots
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff6b6b" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              Cash payments only
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff6b6b" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              No advance booking
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff6b6b" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              Manual attendant verification
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff6b6b" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              No availability data
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff6b6b" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              Wasted time & fuel
+            </li>
+          </ul>
+        </div>
+
+        <div class="compare-vs reveal">
+          <div class="vs-circle">VS</div>
+        </div>
+
+        <div class="compare-card new reveal">
+          <div class="compare-header">
+            <div class="compare-icon good">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg>
+            </div>
+            <h3>ParkMate</h3>
+          </div>
+          <ul class="compare-list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Find spots instantly on map
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Secure digital payments
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Book hours in advance
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Instant QR code verification
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Live availability data
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Save time, fuel & money
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="usp-grid">
+        <div class="usp-item reveal">
+          <div class="usp-num">01</div>
+          <h4>End-to-End Digital Flow</h4>
+          <p>From discovery to exit — fully digital, fully seamless.</p>
+        </div>
+        <div class="usp-item reveal">
+          <div class="usp-num">02</div>
+          <h4>No Guesswork</h4>
+          <p>Real-time data eliminates uncertainty. Know before you go.</p>
+        </div>
+        <div class="usp-item reveal">
+          <div class="usp-num">03</div>
+          <h4>Built for Scale</h4>
+          <p>Architecture designed to expand across cities and ecosystems.</p>
+        </div>
+        <div class="usp-item reveal">
+          <div class="usp-num">04</div>
+          <h4>Smart, Not Static</h4>
+          <p>Insights that adapt to traffic, time, and demand — not spreadsheets.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ HOW IT WORKS ══ -->
+  <section class="how section" id="how">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag reveal">How It Works</div>
+        <h2 class="section-title reveal">From download to parked<br/><span class="gradient-text">in under 60 seconds</span></h2>
+      </div>
+
+      <div class="steps-wrapper">
+        <div class="steps-line"></div>
+        <div class="steps-grid">
+
+          <div class="step reveal">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <div class="step-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v13m0 0l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/></svg>
+              </div>
+              <h3>Download ParkMate</h3>
+              <p>Get the beta APK and install it on your Android device in seconds.</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <div class="step-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+              </div>
+              <h3>Explore Nearby Parking</h3>
+              <p>Login, allow location, and instantly see available spots near you on an interactive map.</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <div class="step-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+              </div>
+              <h3>Book & Pay Digitally</h3>
+              <p>Select your spot, choose your duration, and complete secure payment in one tap.</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <div class="step-num">4</div>
+            <div class="step-content">
+              <div class="step-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="5" y="5" width="3" height="3" fill="currentColor" stroke="none"/><rect x="16" y="5" width="3" height="3" fill="currentColor" stroke="none"/><rect x="5" y="16" width="3" height="3" fill="currentColor" stroke="none"/></svg>
+              </div>
+              <h3>Get Your QR Code</h3>
+              <p>Receive a unique QR code instantly. Show it at the parking spot for contactless entry.</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <div class="step-num">5</div>
+            <div class="step-content">
+              <div class="step-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <h3>Park Stress-Free</h3>
+              <p>Your spot is reserved. Just arrive, scan, and park. No hassle, no waiting.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ BETA ══ -->
+  <section class="beta section" id="beta">
+    <div class="beta-bg">
+      <div class="beta-orb-1"></div>
+      <div class="beta-orb-2"></div>
+    </div>
+    <div class="container">
+      <div class="beta-inner">
+        <div class="beta-text">
+          <div class="section-tag reveal">Beta Launch</div>
+          <h2 class="section-title reveal">
+            Be among the<br/><span class="gradient-text">first to experience</span><br/>ParkMate
+          </h2>
+          <p class="section-body reveal">
+            We're live in beta! This early version gives you access to our core features — smart parking discovery, digital booking, and QR-based access. Your feedback shapes the future of ParkMate.
+          </p>
+          <ul class="beta-points reveal">
+            <li>
+              <div class="bp-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              Free to use during beta
+            </li>
+            <li>
+              <div class="bp-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              Direct feedback channel with the team
+            </li>
+            <li>
+              <div class="bp-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              Early access to upcoming features
+            </li>
+            <li>
+              <div class="bp-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              Shape the product roadmap
+            </li>
+          </ul>
+          <div class="beta-actions reveal">
+            <a href="https://pun33th45.itch.io/parkmate-beta" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v13m0 0l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/></svg>
+              Download APK
+            </a>
+          </div>
+        </div>
+        <div class="beta-qr-wrap reveal">
+          <div class="qr-container">
+            <div class="qr-label">Scan to Download</div>
+            <div class="qr-box">
+              <img src="parkmate-qr.png" alt="Scan to download ParkMate Beta APK" class="qr-image" onerror="this.onerror=null;this.src='qr-code.png'" />
+              <div class="qr-corner tl"></div>
+              <div class="qr-corner tr"></div>
+              <div class="qr-corner bl"></div>
+              <div class="qr-corner br"></div>
+            </div>
+            <div class="qr-sub">Scan with your phone camera to download</div>
+            <div class="qr-badge">
+              <span class="badge-dot"></span> Beta v1.0
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ VISION ══ -->
+  <section class="vision section" id="vision">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag reveal">Future Vision</div>
+        <h2 class="section-title reveal">
+          We're just getting<br/><span class="gradient-text">started.</span>
+        </h2>
+        <p class="section-sub reveal">ParkMate is evolving into a full urban mobility layer. Here's what's coming.</p>
+      </div>
+
+      <div class="vision-grid">
+
+        <div class="vision-card reveal">
+          <div class="vision-glow cyan-glow"></div>
+          <div class="vision-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="vision-soon">Coming Soon</div>
+          <h3>Real-Time Traffic Integration</h3>
+          <p>Live traffic data feeds directly into parking recommendations, routing you to the fastest path and nearest available spot.</p>
+        </div>
+
+        <div class="vision-card reveal">
+          <div class="vision-glow purple-glow"></div>
+          <div class="vision-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+          </div>
+          <div class="vision-soon">In Development</div>
+          <h3>AI Parking Prediction</h3>
+          <p>Machine learning models predict parking demand by location, time of day, and events — so you know parking availability before you leave.</p>
+        </div>
+
+        <div class="vision-card reveal">
+          <div class="vision-glow blue-glow"></div>
+          <div class="vision-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <div class="vision-soon">Roadmap</div>
+          <h3>Smart City Integrations</h3>
+          <p>Partnerships with municipal corporations, malls, and transit hubs to create a unified urban parking ecosystem.</p>
+        </div>
+
+        <div class="vision-card reveal">
+          <div class="vision-glow green-glow"></div>
+          <div class="vision-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+          </div>
+          <div class="vision-soon">Scaling</div>
+          <h3>Multi-City Expansion</h3>
+          <p>Built from day one to scale. Architecture that supports thousands of cities, millions of spots, and billions of bookings.</p>
+        </div>
+
+      </div>
+
+      <div class="vision-banner reveal">
+        <div class="vb-text">
+          <h3>The future of urban mobility starts with parking.</h3>
+          <p>ParkMate is laying the foundation for smart cities of tomorrow.</p>
+        </div>
+        <div class="vb-metrics">
+          <div class="vb-m">
+            <span class="vb-num">10+</span>
+            <span class="vb-label">Cities Planned</span>
+          </div>
+          <div class="vb-m">
+            <span class="vb-num">1M+</span>
+            <span class="vb-label">Spots Target</span>
+          </div>
+          <div class="vb-m">
+            <span class="vb-num">End of 2026</span>
+            <span class="vb-label">Full Launch</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ FOOTER ══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">
+            <div class="logo-mark">
+              <svg width="28" height="36" viewBox="0 0 28 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 0C6.27 0 0 6.27 0 14C0 23.1 14 36 14 36C14 36 28 23.1 28 14C28 6.27 21.73 0 14 0Z" fill="#6BAE96"/>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6 4H14.5C18.64 4 22 7.36 22 11.5C22 15.64 18.64 19 14.5 19H11V24H6V4Z
+                     M11 8V15H14.5C16.43 15 18 13.43 18 11.5C18 9.57 16.43 8 14.5 8H11Z"
+                  fill="#1A1A1A"/>
+              </svg>
+            </div>
+            <span class="logo-text">ParkMate</span>
+          </a>
+          <p class="footer-tagline">Park Smarter. Move Faster.<br/>The intelligent urban parking platform.</p>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="#how">How It Works</a>
+          <a href="#beta">Beta Download</a>
+          <a href="#vision">Roadmap</a>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Company</h4>
+          <a href="#">About Us</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2025 ParkMate. All rights reserved.</span>
+        <div class="footer-bottom-right">
+          <span class="beta-chip">
+            <span class="badge-dot"></span>
+            Beta Version 1.0
+          </span>
+          <span>Built for smart cities</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
