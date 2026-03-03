@@ -107,6 +107,15 @@ Open index.html in your browser.
 
 📸 Screenshots
 
+## 🏠 Home Page
+![Home Page](https://raw.githubusercontent.com/pun33th45/ParkMate-android/a98ca1013f99761e308e71075dd7e1b99f15da62/Screenshots/home%20page.png)
+
+## ⭐ USP
+![USP](https://raw.githubusercontent.com/pun33th45/ParkMate-android/a98ca1013f99761e308e71075dd7e1b99f15da62/Screenshots/usp.png)
+
+## 🚀 Beta Access
+![Beta Access](https://raw.githubusercontent.com/pun33th45/ParkMate-android/a98ca1013f99761e308e71075dd7e1b99f15da62/Screenshots/beta%20access.png)
+
 📈 Future Enhancements
 
 AI-based parking occupancy prediction
