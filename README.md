@@ -79,18 +79,6 @@ Contact / Early access registration
 
 Call-to-action sections
 
-📂 Project Structure
-ParkMate-Launch-Website/
-│
-├── index.html
-├── css/
-│   └── styles.css
-├── js/
-│   └── script.js
-├── assets/
-│   ├── images/
-│   └── icons/
-└── README.md
 🧠 Core USP (Unique Selling Point)
 
 Smart Parking. Zero Hassle. Real-Time Booking.
@@ -118,8 +106,6 @@ cd parkmate-launch-website
 Open index.html in your browser.
 
 📸 Screenshots
-
-(Add screenshots here)
 
 ![Home Page](assets/images/home.png)
 ![Booking Section](assets/images/booking.png)
