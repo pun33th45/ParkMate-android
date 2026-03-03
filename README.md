@@ -107,8 +107,6 @@ Open index.html in your browser.
 
 📸 Screenshots
 
-![Home Page](assets/images/home.png)
-![Booking Section](assets/images/booking.png)
 📈 Future Enhancements
 
 AI-based parking occupancy prediction
